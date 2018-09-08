@@ -1,10 +1,15 @@
 # kiki
 A Python Client For TdAmeritrade API
+[Documentation](http://inside.probability.ninja/kiki-a-python-client-for-tdameritrade-api/) version 1.0.0
 
 
-[Documentation](http://inside.probability.ninja/index.php/2018/07/27/kiki-a-python-client-for-tdameritrade-api/) version 1.0.0
+# Usage
+* First [create a new local app](https://developer.tdameritrade.com/) using http://localhost as your Callback URL.
+* You can easily URL decode the code you get above in python: `import urllib.parse;urllib.parse.unquote('YOUR%20CODE')`
+* Next follow the instructions [here](https://developer.tdameritrade.com/content/simple-auth-local-apps) to get refresh and access tokens. Note, you will need to renew your access token here every 90 days.
 
 
+# Example Usage
 ```python
 
 refresh_token=''
@@ -19,7 +24,7 @@ print(p.get_price_history('SNAP',p.unix_time_millis(start_date),
                                  p.unix_time_millis(end_date)))
 ```
 
-```text
+```console return
     close       datetime     high     low   open     volume
 0   14.08  1522731600000  14.9000  13.800  14.80   33231754
 1   14.59  1522818000000  14.7800  13.620  13.69   20131765
