@@ -7,7 +7,7 @@ A Python Client For TdAmeritrade API
 # Usage
 * First [create a new local app](https://developer.tdameritrade.com/) using http://localhost as your Callback URL.
 * You can easily URL decode the code you get above in python: `import urllib.parse;urllib.parse.unquote('YOUR%20CODE')`
-* Next follow the instructions [here](https://developer.tdameritrade.com/content/simple-auth-local-apps) to get refresh and access tokens. Note, you will need to renew your access token here every 90 days.
+* Next follow the instructions [here](https://developer.tdameritrade.com/content/simple-auth-local-apps) to get refresh and access tokens. Note, you will need to renew your refresh token here every 90 days to continue using the api.
 
 
 # Example Usage
