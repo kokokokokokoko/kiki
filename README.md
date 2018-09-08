@@ -10,6 +10,8 @@ A Python Client For TdAmeritrade API
 
 
 # Example Usage
+
+From kiki.py
 ```python
 
 refresh_token=''
@@ -23,7 +25,7 @@ end_date = datetime.strptime('05 3 2018  1:33PM', '%m %d %Y %I:%M%p')
 print(p.get_price_history('SNAP',p.unix_time_millis(start_date),
                                  p.unix_time_millis(end_date)))
 ```
-
+Console returns
 ```text
     close       datetime     high     low   open     volume
 0   14.08  1522731600000  14.9000  13.800  14.80   33231754
