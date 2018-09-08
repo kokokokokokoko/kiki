@@ -24,7 +24,7 @@ print(p.get_price_history('SNAP',p.unix_time_millis(start_date),
                                  p.unix_time_millis(end_date)))
 ```
 
-```console return
+```text
     close       datetime     high     low   open     volume
 0   14.08  1522731600000  14.9000  13.800  14.80   33231754
 1   14.59  1522818000000  14.7800  13.620  13.69   20131765
